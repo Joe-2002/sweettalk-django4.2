@@ -153,6 +153,7 @@ Django拥有详细的官方文档和活跃的开发者社区，其中有许多�
 ## 贡献者
 
 项目负责人：[李柯辰](https://github.com/Joe-2002) 
+
 邮箱：likechen@linchance.com
 
 <table border="0">
