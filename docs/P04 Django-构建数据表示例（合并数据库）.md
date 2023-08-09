@@ -6,6 +6,8 @@ lastmod: 2023-06-27T17:23:27Z
 
 # P04 Django-构建数据表示例（合并数据库）
 
+**models.py**
+
 1. 新建 产品分类 表
 
     ```python
@@ -15,7 +17,8 @@ lastmod: 2023-06-27T17:23:27Z
         name = CharField(max_length=64, verbose_name='名称')
        remark = CharField(max_length=256, null=True, blank=True, verbose_name='备注')
     ```
-2. 新建 产品信息 表
+
+2. 新建 产品信息 表 
 
     ```python
     class Goods(Model):
@@ -31,6 +34,7 @@ lastmod: 2023-06-27T17:23:27Z
         retail_price = FloatField(default=0, verbose_name='零售价')
        remark = CharField(max_length=256, null=True, blank=True, verbose_name='备注')
     ```
+
 3. 合并数据库
 
     > 这两个命令是Django框架中的关键命令，用于进行数据库迁移。当你修改了Django模型后，你需要运行这两个命令，以将这些更改应用到数据库中。

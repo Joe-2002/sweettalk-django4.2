@@ -16,6 +16,8 @@ lastmod: 2023-06-27T18:16:10Z
 
    通过输出观察数据类型
 
+**views.py**
+
    ```python
    # 函数式编程
    @api_view(['POST','GET'])
@@ -31,7 +33,6 @@ lastmod: 2023-06-27T18:16:10Z
        print("object.get(id=1) type:",type(Goods.objects.get(id=1)))
        return Response(ans)
    ```
-3. 怎么用
 
 　　‍
 

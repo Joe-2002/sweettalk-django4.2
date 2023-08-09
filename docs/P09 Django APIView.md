@@ -13,35 +13,41 @@ lastmod: 2023-06-27T21:54:03Z
    APIview 是 Django REST Framework 提供的一个视图类。它和 Django 中的 view 类有些相似，但是又有一些不同之处。APIview 可以处理基于 HTTP 协议的请求，并返回基于内容协商的响应，它旨在提供一个易于使用且灵活的方式来构建 API 视图。
 2. 如何使用
 
-   view.py
+    **view.py**
 
    ```python
    # 面向对象编程
    from django.shortcuts import render
    from rest_framework.decorators import api_view
-   from .models import Good
+   from .models import *
    from rest_framework.response import Response
    from rest_framework.views import APIView
-   class testapi(APIView):
-       def get(self, request, format=None):
-           data = {"name": "红酒", "quantity": 10, "method": "POST_APIView"}
-           return Response(data)
+    # 面向对象编程
+    class FilterGoodsCategoryAPI(APIView):
+        # request 表示当前的请求对象
+        # self 表示当前实例对象
 
-      def post(self, request, format=None):
-           data = {"name": "红酒", "quantity": 10, "method": "GET_APIView"}
-           return Response(data)
+        def get(self, request, format=None):
+            print(request.method)
+            return Response('ok')
+
+        def post(self, request, format=None):
+            print(request.method)
+            return Response('ok')
+
+        def put(self, request, format=None):
+            print(request.method)
+            return Response('ok')
    ```
 
-   url.py
+   **url.py**
 
    ```python
-   from edu.views import test, testapi
+   from apps.erp_test.views import *
 
    urlpatterns = [
        path('admin/', admin.site.urls),
-       path('test/', test),
-       path('testapi/', testapi.as_view()),
-       path('products/<int:pk>/', ProductDetail.as_view(), name='product-detail'),
+       path('filtergoodscategoryapi/', FilterGoodsCategoryAPI.as_view()),
    ]
    ```
 
