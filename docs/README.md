@@ -173,7 +173,7 @@ Django 拥有详细的官方文档和活跃的开发者社区，其中有许多�
 
 ## 致谢
 
-特别感谢 [@Sm1les](https://github.com/Sm1les) 对本项目的帮助与支持。
+特别感谢 [@Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)对本项目的帮助与支持。
 
 另外，十分感谢大家对于 Sweettalk-Django4.2 的关注。
 
