@@ -17,14 +17,16 @@ lastmod: 2023-06-30T21:01:25Z
 **views.py**
 
 ```python
-from rest_framework.decorators import action
-class CategoryModelViewSet(ModelViewSet):
-    queryset= GoodsCategory.objects.all()
+class GoodsCategoryViewSet(ModelViewSet):
+    # 指定查询集（用到的数据）
+    queryset = GoodsCategory.objects.all()
+    # 指定查询集用到的序列化容器
     serializer_class = GoodsCategorySerilizer
 
     @action(detail=False, methods=['get'])
-    def test(self,request):
-        print("helllo 你调用了自定义的函数")
+    def latest(self, request):
+        latest_obj = GoodsCategory.objects.latest('id')
+        print(latest_obj)
         return Response("helllo 你调用了自定义的函数")
 ```
 

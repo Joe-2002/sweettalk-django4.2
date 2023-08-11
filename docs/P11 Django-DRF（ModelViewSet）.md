@@ -43,25 +43,20 @@ class YourModelViewSet(ModelViewSet):
 
 　　使用 ModelViewSet 后，你将自动获得默认的 CRUD 方法。
 
+
 ```python
 from rest_framework.decorators import action
-
-class TestModelViewSet(ModelViewSet):
-    queryset= Goods.objects.all()
-    serializer_class = GoodsSerializer
-
-    # def test(self,request):
-      
-        # pass 只是用于占位
-        # pass
-
-class CategoryModelViewSet(ModelViewSet):
-    queryset= GoodsCategory.objects.all()
+#### modelviewset
+class GoodsCategoryViewSet(ModelViewSet):
+    # 指定查询集（用到的数据）
+    queryset = GoodsCategory.objects.all()
+    # 指定查询集用到的序列化容器
     serializer_class = GoodsCategorySerilizer
 
     @action(detail=False, methods=['get'])
-    def test(self,request):
-        print("helllo 你调用了自定义的函数")
+    def latest(self, request):
+        latest_obj = GoodsCategory.objects.latest('id')
+        print(latest_obj)
         return Response("helllo 你调用了自定义的函数")
 ```
 
@@ -70,17 +65,12 @@ class CategoryModelViewSet(ModelViewSet):
 ```python
 class GoodsSerializer(ModelSerializer):
 
-    # 外键字段相关的数据 需要单独
+    # 外键字段相关的数据 需要单独写
     category = GoodsCategorySerilizer()
-    category_id = PrimaryKeyRelatedField(queryset=GoodsCategory.objects.all())
-
-    # category_name = CharField(source='category.name',read_only=True)
 
     class Meta:
         # 指定需要序列化的表
         model = Goods
         # 指定我们需要序列化的字段
-        # fields = ('name','number',)
-        read_only_fields = ['category']
-        fields = ('name', 'number', 'category_id',)
+        fields = '__all__'
 ```
