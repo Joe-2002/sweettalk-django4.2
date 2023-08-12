@@ -21,6 +21,7 @@ lastmod: 2023-06-27T17:23:24Z
     加入新增的APP
 
     ```python
+     'apps.goods',
      'apps.erp_test'
     ```
 
