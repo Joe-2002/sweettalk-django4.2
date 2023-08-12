@@ -126,3 +126,8 @@ urlpatterns = [
   # 输出：
   [OrderedDict([('id', 1), ('number', '1'), ('name', '第一个产品'), ('purchase_price', 100.0), ('retail_price', 150.0), ('remark', '测试产品')]), OrderedDict([('id', 2), ('number', '123'), ('name', '产品2'), ('purchase_price', 123.0), ('retail_price', 4123.0), ('remark', '测试产品2')])]  
   ```
+
+* 序列化关联对象（有外键字段）
+
+  ‍
+* ‍
