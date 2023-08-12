@@ -34,6 +34,7 @@ lastmod: 2023-06-27T18:16:10Z
        return Response(ans)
    ```
 
+
 > 介绍 QuerySet 和 Instance 的区别，使用场景，如何使用。
 
 ## **QuerySet**
@@ -82,3 +83,4 @@ lastmod: 2023-06-27T18:16:10Z
 
 　　QuerySet 适用于需要查找多个对象或进行聚合操作的场景，而 Instance 适用于单独对象的创建、修改和删除操作。
 
+　　‍
