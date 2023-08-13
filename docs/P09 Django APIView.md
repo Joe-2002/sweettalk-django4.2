@@ -22,6 +22,36 @@ lastmod: 2023-06-27T21:54:03Z
    from .models import *
    from rest_framework.response import Response
    from rest_framework.views import APIView
+   #### APIView
+    class GetGoods(APIView):
+        def get(self, request):
+            data = Goods.objects.all()
+            serializer = GoodsSerializer(instance=data, many=True)
+            print(serializer.data)
+            return Response(serializer.data)
+
+        def post(self, request):
+            # 从请求数据中提取字段
+            request_data = {
+                "category": request.data.get("Goodscategory"),
+                "number": request.data.get("number"),
+                "name": request.data.get("name"),
+                "barcode": request.data.get("barcode"),
+                "spec": request.data.get("spec"),
+                "shelf_life_days": request.data.get("shelf_life_days"),
+                "purchase_price": request.data.get("purchase_price"),
+                "retail_price": request.data.get("retail_price"),
+                "remark": request.data.get("remark"),
+            }
+
+            # 使用 create() 方法创建新的商品对象
+            new_goods = Goods.objects.create(**request_data)
+
+            # 对创建的对象进行序列化，并作为响应返回
+            serializer = GoodsSerializer(instance=new_goods)
+            return Response(serializer.data)
+
+
     # 面向对象编程
     class FilterGoodsCategoryAPI(APIView):
         # request 表示当前的请求对象
@@ -48,6 +78,7 @@ lastmod: 2023-06-27T21:54:03Z
    urlpatterns = [
        path('admin/', admin.site.urls),
        path('filtergoodscategoryapi/', FilterGoodsCategoryAPI.as_view()),
+       path('getgoods/', GetGoods.as_view()),
    ]
    ```
 

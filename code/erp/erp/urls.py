@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from apps.erp_test.views import *
+
 
 from apps.erp_test.views import *
 from django.urls import include
@@ -32,6 +32,7 @@ router.register('GoodsCategory', GoodsCategoryViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('filtergoodscategory/', FilterGoodsCategory),
+    path('insertgoodscategory/', InsertGoodsCategory),
     path('filtergoodscategoryapi/', FilterGoodsCategoryAPI.as_view()),
     path('getgoods/', GetGoods.as_view()),
 ]

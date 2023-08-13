@@ -34,6 +34,10 @@ lastmod: 2023-06-27T18:16:10Z
        return Response(ans)
    ```
 
+　　‍
+
+　　‍
+
 > 介绍 QuerySet 和 Instance 的区别，使用场景，如何使用。
 
 ## **QuerySet**
@@ -55,13 +59,35 @@ lastmod: 2023-06-27T18:16:10Z
   ​`all()`​​ 方法返回模型的所有对象，它的效果等价于不带任何条件的 `filter()`​​ 方法。
 * delete()
 
-  ​`delete()`​​ 方法可以删除符合条件的所有对象
+  ​`delete()`​​ 方法可以删除符合条件的所有对象  
+
+  ```python
+    @action(detail=False, methods=['get','post'])
+    def delete_example(self, request):
+        name = request.data.get('name')
+        # 删除名称为 'name' 的商品
+        categories_to_delete = GoodsCategory.objects.filter(name=name)
+        # 使用delete()方法删除对象
+        deleted_count= categories_to_delete.delete()
+        print(f"Deleted {deleted_count} categories.")      
+  ```
+
 * update()
 
   ​`update()`​​ 方法可以将符合条件的所有对象的某个字段值进行更新
 * create()
 
-  ​`create()`​​ 方法是 `save()`​​ 方法的快捷方式，用于创建并保存一个新的对象。
+  ​`create()`​​ 方法是 `save()`​​ 方法的快捷方式，用于创建并保存一个新的对象。  
+
+  ```python
+    @action(detail=False, methods=['get','post'])
+    def create_example(self, request):
+        name = request.data.get('name')
+            # 使用create()方法创建新的商品分类对象
+        created_category = GoodsCategory.objects.create(name)
+        print("Created category:", created_category)   
+  ```
+
 * count()
 
   ​`count()`​​ 方法返回符合条件的对象数量
@@ -72,7 +98,7 @@ lastmod: 2023-06-27T18:16:10Z
 
 ## Instance
 
-> Instance 指的是一个 Django 模型的单个实例，也就是数据库中的一行数据。相比于 QuerySet（查询集合），它是针对单个对象的操作，比如创建、更新或者删除模型实例。stance 用于创建、更新或者删除单个模型实例。
+> Instance 指的是一个 Django 模型的单个实例，也就是数据库中的一行数据。相比于 QuerySet（查询集合），它是针对单个对象的操作，比如创建、更新或者删除模型实例。Instance 用于创建、更新或者删除单个模型实例。
 
 * 创建一个对象：`Obj = Model(attr1=val1, attr2=val2)`​，`Obj.save()`​
 * 更新一个对象：`Obj = Model.objects.get(id=xxx)`​，`Obj.attr1 = val1`​，`Obj.save()`​
@@ -82,3 +108,4 @@ lastmod: 2023-06-27T18:16:10Z
 
 　　QuerySet 适用于需要查找多个对象或进行聚合操作的场景，而 Instance 适用于单独对象的创建、修改和删除操作。
 
+　　‍
