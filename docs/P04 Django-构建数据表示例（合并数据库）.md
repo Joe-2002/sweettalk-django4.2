@@ -27,7 +27,7 @@ lastmod: 2023-06-27T17:23:27Z
         number = CharField(max_length=32, verbose_name='编号')
         name = CharField(max_length=64, verbose_name='名称')
        barcode = CharField(max_length=32, null=True, blank=True, verbose_name='条码')
-        category = ForeignKey('goods.GoodsCategory', on_delete=SET_NULL, null=True,related_name='goods_set', verbose_name='产品分类')
+        category = ForeignKey('GoodsCategory', on_delete=SET_NULL, null=True,related_name='goods_set', verbose_name='产品分类')
         spec = CharField(max_length=64, null=True, blank=True, verbose_name='规格')
         shelf_life_days = IntegerField(null=True, verbose_name='保质期天数')
         purchase_price = FloatField(default=0, verbose_name='采购价')

@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.erp_test',
-    'rest_framework',
-    'django_filters',
-    'drf_spectacular',
+    'apps.erp_test',#新加
+    'rest_framework',#新加
+    'django_filters',#新加
+    'drf_spectacular',#新加
 
 ]
 
