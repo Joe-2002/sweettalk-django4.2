@@ -24,12 +24,12 @@ from apps.erp_test.views import *
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('test',TestModelViewSet)
-router.register('CategoryModelViewSet',CategoryModelViewSet)
+router.register('GoodsCategory', GoodsCategoryViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('filtergoodscategory/', FilterGoodsCategory),
+    path('insertgoodscategory/', InsertGoodsCategory),
     path('filtergoodscategoryapi/', FilterGoodsCategoryAPI.as_view()),
     path('getgoods/', GetGoods.as_view()),
 ]
@@ -38,4 +38,6 @@ urlpatterns = [
 urlpatterns += router.urls
 ```
 
-　　使用`routers.DefaultRouter()`​创建了一个默认的路由器对象，并使用`router.register()`​方法注册了两个视图集，分别是`TestModelViewSet`​和`CategoryModelViewSet`​。这样可以自动为这两个视图集生成对应的URL路由，并将其添加到`urlpatterns`​中。
+　　使用`routers.DefaultRouter()`​创建了一个默认的路由器对象，并使用`router.register()`​方法注册了一个视图集，`GoodsCategoryViewSet`​。这样可以自动为这个视图集生成对应的URL路由，并将其添加到`urlpatterns`​中。
+
+​![image](.\assets\2023-08-15_164041.png)​
