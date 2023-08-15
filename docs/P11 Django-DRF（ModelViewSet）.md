@@ -12,23 +12,23 @@ lastmod: 2023-06-29T23:47:37Z
 
 　　模型类提供了默认的增删改查功能。
 
-　　它继承自 `GenericViewSet`​、`ListModelMixin`​、`RetrieveModelMixin`​、`CreateModelMixin`​、`UpdateModelMixin`​、`DestoryModelMixin`​。
+　　它继承自 `GenericViewSet`、`ListModelMixin`、`RetrieveModelMixin`、`CreateModelMixin`、`UpdateModelMixin`、`DestoryModelMixin`。
 
 |知识点|请求|url|特点|
 | ------------------| --------| --------------------------| ----------------------------------------|
 |GenericViewSet|||提供一组通用的视图方法，方便实现特定功能|
-|ListModelMixin|get|127.0.0.1:8000/book/|提供 `list`​ 方法，用于**获取资源列表**|
-|RetrieveModelMixin|get|127.0.0.1:8000/book/{1}/|提供 `retrieve`​ 方法，用于**获取单个资源的详细信息**|
-|CreateModelMixin|post|127.0.0.1:8000/book/|提供 `create`​ 方法，用于**创建资源**|
-|UpdateModelMixin|put|127.0.0.1:8000/book/{1}/|提供 `update`​ 方法，用于**更新资源**|
-|DestroyModelMixin|detete|127.0.0.1:8000/book/{1}/|提供 `destroy`​ 方法，用于**删除资源**|
+|ListModelMixin|get|127.0.0.1:8000/book/|提供 `list` 方法，用于**获取资源列表**|
+|RetrieveModelMixin|get|127.0.0.1:8000/book/{1}/|提供 `retrieve` 方法，用于**获取单个资源的详细信息**|
+|CreateModelMixin|post|127.0.0.1:8000/book/|提供 `create` 方法，用于**创建资源**|
+|UpdateModelMixin|put|127.0.0.1:8000/book/{1}/|提供 `update` 方法，用于**更新资源**|
+|DestroyModelMixin|detete|127.0.0.1:8000/book/{1}/|提供 `destroy` 方法，用于**删除资源**|
 |自定义|get/post|127.0.0.1:8000/book/自定义|用户自定义方法/函数|
 
 　　这些技术知识点可以配合使用，帮助我们快速构建出具有 CRUD 功能的 Web 应用，并且遵循了 Django 框架的惯例和最佳实践。它们的应用场景包括博客系统、电商平台、社交网络等各种类型的 Web 应用。通过使用这些技术知识点，我们能够提高开发效率，减少重复的代码编写工作，并且保证代码的一致性和可维护性。
 
 ## 如何使用
 
-　　设置 `queryset`​ 属性为要查询的对象集合，并设置 `serializer_class`​ 属性为对应的序列化器类。
+　　设置 `queryset` 属性为要查询的对象集合，并设置 `serializer_class` 属性为对应的序列化器类。
 
 ### 示例
 

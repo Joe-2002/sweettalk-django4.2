@@ -11,12 +11,12 @@ lastmod: 2023-06-27T17:23:33Z
 1. 创建后台 admin 管理员
 
 ```shell
-    ​python manage.py createsuperuser #​（创建超级管理员）
+    python manage.py createsuperuser #（创建超级管理员）
 ```
 
 1. 登录 admin 后台(浏览器中输入)
 
-    ​`http://127.0.0.1:8000/admin`​
+    `http://127.0.0.1:8000/admin`
 
 　　‍
 
