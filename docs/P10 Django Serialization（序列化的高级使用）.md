@@ -6,18 +6,18 @@ lastmod: 2023-06-28T16:33:15Z
 
 # P10 Django Serialization（序列化的高级使用）
 
-　　序列化器 `serializers`​
+　　序列化器 `serializers`
 
 　　**序列化器的作用：**
 
-1. 序列化：将 `queryset`​ 和 `instance`​ 转换为 `json/xml/yaml`​ 返回给前端
+1. 序列化：将 `queryset` 和 `instance` 转换为 `json/xml/yaml` 返回给前端
 2. 反序列化：与序列化则相反
 
 　　**定义序列化器：**
 
 1. 定义类，继承自 Serializer
 
-　　通常新建一个 `serializers.py`​ 文件 撰写序列化内容
+　　通常新建一个 `serializers.py` 文件 撰写序列化内容
 
 　　suah as：
 
@@ -120,12 +120,12 @@ urlpatterns = [
 
 * 序列化单个对象
 
-  * 获取对象  `data = Goods.objects.get(id=1)`​
-  * 创建序列化器 `sberializer = GoodsSerializer(instance=data)`​
-  * 转换数据 `print(serializer.data)`​
+  * 获取对象  `data = Goods.objects.get(id=1)`
+  * 创建序列化器 `sberializer = GoodsSerializer(instance=data)`
+  * 转换数据 `print(serializer.data)`
   * 注意点：
 
-    ​`instance`​是一个参数，用于指定要序列化或反序列化的 Python 对象。具体来说，它是一个类实例(Class Instance),通常是指一个从数据库或其他数据源中检索出来的模型实例(Model Instance)。
+    `instance`是一个参数，用于指定要序列化或反序列化的 Python 对象。具体来说，它是一个类实例(Class Instance),通常是指一个从数据库或其他数据源中检索出来的模型实例(Model Instance)。
 
     当我们需要将一个模型实例转换为 JSON 或其他格式时，可以使用 Django 的序列化器(Serializer)来实现。
   * 输出：
