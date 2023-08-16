@@ -173,7 +173,6 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 
 <a href="https://github.com/Joe-2002/sweettalk-django4.2/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Joe-2002/sweettalk-django4.2" />
-  
 </a>
 
 
@@ -181,3 +180,11 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 ## 项目地址
 
 [点击这里](https://github.com/Joe-2002/sweettalk_django4.2)
+
+## License
+LinChance © 2023, sweettalk-django4.2 - Released under the GNU Affero General Public License v3.0.
+
+
+
+
+
