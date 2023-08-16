@@ -24,7 +24,7 @@ lastmod: 2023-06-27T17:23:24Z
      'apps.erp_test'
     ```
 
-<<<<<<< HEAD
+
     ​![image](assets\2023-08-14_201211.png)​
 
 2. 启动项目  
@@ -38,17 +38,4 @@ lastmod: 2023-06-27T17:23:24Z
         # 启动Django服务
         3.python manage.py runserver
 
-=======
-    ![image](assets/image-20230524160454-azcc2ka.png)
 
-2. 启动项目
-    运行项目先执行数据库相关操作，再启动 django 项目
-
-    ```bash
-    # 先执行数据库迁移相关操作
-    python manage.py makemigrations
-    python manage.py migrate
-    # 启动 django 项目
-    python manage.py runserver
->>>>>>> 61fb4b83cdac36a6a03fa939a534382a5deaaf0d
-    ```

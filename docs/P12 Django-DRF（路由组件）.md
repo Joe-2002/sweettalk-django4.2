@@ -38,10 +38,10 @@ urlpatterns = [
 urlpatterns += router.urls
 ```
 
-<<<<<<< HEAD
+
 　　使用`routers.DefaultRouter()`​创建了一个默认的路由器对象，并使用`router.register()`​方法注册了一个视图集，`GoodsCategoryViewSet`​。这样可以自动为这个视图集生成对应的URL路由，并将其添加到`urlpatterns`​中。
 
 ​![image](.\assets\2023-08-15_164041.png)​
-=======
-　　使用`routers.DefaultRouter()`创建了一个默认的路由器对象，并使用`router.register()`方法注册了两个视图集，分别是`TestModelViewSet`和`CategoryModelViewSet`。这样可以自动为这两个视图集生成对应的URL路由，并将其添加到`urlpatterns`中。
->>>>>>> 61fb4b83cdac36a6a03fa939a534382a5deaaf0d
+
+
+
