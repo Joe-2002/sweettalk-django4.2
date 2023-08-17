@@ -1,32 +1,32 @@
 from django.db.models import *
 
+
 # Create your models here.
 ## 产品分类表
 class GoodsCategory(Model):
     """产品分类"""
 
-    name = CharField(max_length=64,verbose_name='分类名称')
-    remark = CharField(max_length=64,null=True,verbose_name='备注',blank=True)
+    name = CharField(max_length=64, verbose_name='分类名称')
+    remark = CharField(max_length=64, null=True, verbose_name='备注', blank=True)
 
 
 ## 产品表
 class Goods(Model):
     """产品"""
-    
+
     # 外键
-    category = ForeignKey(GoodsCategory, on_delete=SET_NULL,related_name='goods_set',null=True,verbose_name='产品分类',blank=True,)
+    category = ForeignKey(GoodsCategory, on_delete=SET_NULL, related_name='goods_set', null=True, verbose_name='产品分类',
+                          blank=True, )
     # on_delete 
 
-
-    number = CharField(max_length=32,verbose_name='产品编号')
-    name = CharField(max_length=64,verbose_name='产品名称')
-    barcode = CharField(max_length=32,null=True,blank=True,verbose_name='条码')
-    spec = CharField(max_length=64,null=True,blank=True,verbose_name='规格')
+    number = CharField(max_length=32, verbose_name='产品编号')
+    name = CharField(max_length=64, verbose_name='产品名称')
+    barcode = CharField(max_length=32, null=True, blank=True, verbose_name='条码')
+    spec = CharField(max_length=64, null=True, blank=True, verbose_name='规格')
     shelf_life_days = IntegerField(null=True, verbose_name='保质期天数')
     purchase_price = FloatField(default=0, verbose_name='采购价')
     retail_price = FloatField(default=0, verbose_name='零售价')
     remark = CharField(max_length=128, null=True, blank=True, verbose_name='备注')
-
 
 
 """
