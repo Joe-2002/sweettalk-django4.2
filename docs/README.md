@@ -36,7 +36,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 人群定位：可以零基础入门。
 
-难度系数：容易
+难度系数：中等
 
 备注：需要 Python 基础
 
@@ -176,6 +176,11 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
          <a href="https://github.com/Ethan-2004"><img width="70" height="70" src="https://github.com/Ethan-2004.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/Ethan-2004">张海生</a>
          <p>南通师范高等专科学校<br>江苏霖承科技有限公司</p>
+      </td>
+      <td>
+         <a href="https://github.com/user58932"><img width="70" height="70" src="https://github.com/user58932.png?s=40" alt="pic"></a><br>
+         <a href="https://github.com/user58932">蒋忱迅</a>
+         <p>南京航空航天大学<br>江苏霖承科技有限公司</p>
       </td>
     </tr>
   </tbody>
