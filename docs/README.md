@@ -34,11 +34,9 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 学习形式：理论学习 + 练习
 
-人群定位：可以零基础入门。
+人群定位：可以零基础入门
 
 难度系数：中等
-
-备注：需要 Python 基础
 
 如果觉得本项目中有错误，可以[点击这里](https://github.com/Joe-2002/sweettalk_django4.2/issues)提交你希望补充的内容，我们看到后会尽快进行补充。
 
@@ -58,7 +56,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 ## 项目规划
 
-### Day1
+### Day1 安装虚拟环境与依赖包
 #### 虚拟环境
 
  在虚拟环境中安装django依赖包
@@ -81,13 +79,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 2. 运行项目
 
-### Day2
-
-#### 构建数据表并合并
-
-1. 创建产品分类和产品两个数据表
-2. 执行生成迁移脚本命令和迁移命令
-
+### Day2 创建 Django 项目和 APP
 
 
 #### 数据表的常用字段和常用配置
@@ -95,7 +87,8 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 1. 熟悉数据表的常用字段和常用配置
 2. 尝试使用数据表的字段和配置
 
-### Day3
+### Day3 配置 settings.py 和 启动项目
+
 
 #### 引入 admin 后台和管理员
 
@@ -109,21 +102,22 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 2. 撰写根据产品分类筛选产品的 api
 3. 使用 postman 调用 api
 
-### Day4
+### Day4 Django 构建数据表创建与数据迁移
 
-#### QuerySet 和 Instance
+#### 构建数据表并合并
 
-1. 输出相关数据的数据类型，找出 QuerySet 和 Instance
-2. 尝试对数据进行增删查改等操作
+1. 创建产品分类和产品两个数据表
+2. 执行生成迁移脚本命令和迁移命令
 
-### Day5
+
+### Day5 Django-models的常用字段和常用配置
 
 #### APIView
 
 1. 使用 APIView，试比较 APIView 和 as_view 的区别
 2. 使用 APIView 的 as_view 方法
 
-### Day6
+### Day6 Django-admin 引入admin后台和管理员
 
 #### 构建序列化
 
@@ -138,15 +132,19 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 - 序列化多个对象
 - 序列关联对象（有外键）
 
-### Day7
+### Day7 构建数据表
 
-- #### Django-DRF(ModelViewSet)的使用
+- #### Django-DRF的使用
 
-- #### Django-DRF（ModelViewSet）简介
+- #### Django-DRF简介 
 
-- #### 使用 DRF（ModelViewSet）方法
+### Day8 DRF QuerySet 和 Instance功能概述
 
-### Day8
+#### QuerySet 和 Instance
+
+1. 输出相关数据的数据类型，找出 QuerySet 和 Instance
+2. 尝试对数据进行增删查改等操作
+
 
 #### DefaultRouter 的使用
 
