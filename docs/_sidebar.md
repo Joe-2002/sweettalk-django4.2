@@ -10,5 +10,4 @@
   * [P09 Django APIView](P09.md)
   * [P10 Django Serialization（序列化的高级使用）](P10.md)
   * [P11 Django-DRF（ModelViewSet）](P11.md)
-  * [P12 Django-DRF（路由组件）](P12.md)
-  * [P13 Django-DRF 自定义函数](P13.md)
+  * [P12 Django-DRF 路由组件与自定义函数）](P12.md)

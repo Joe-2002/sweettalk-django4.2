@@ -145,7 +145,6 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 1. 输出相关数据的数据类型，找出 QuerySet 和 Instance
 2. 尝试对数据进行增删查改等操作
 
-
 #### DefaultRouter 的使用
 
 - 导入 DefaultRouter
