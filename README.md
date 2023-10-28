@@ -196,7 +196,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 ## 致谢
 
-特别感谢 [@Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)、[周理璇]((https://www.github.com/Aomferni)对本项目的帮助与支持。
+特别感谢 [@Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)、[周理璇](https://www.github.com/Aomferni)对本项目的帮助与支持。
 
 特别感谢以下为教程做出贡献的同学！
 
