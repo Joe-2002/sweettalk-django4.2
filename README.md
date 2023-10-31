@@ -189,6 +189,10 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 </table>
 </div>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Joe-2002/sweettalk-django4.2&type=Date)](https://star-history.com/#Joe-2002/sweettalk-django4.2&Date)
+
 ## 致谢
 
 特别感谢 [Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)、[周理璇](https://www.github.com/Aomferni)对本项目的帮助与支持。
