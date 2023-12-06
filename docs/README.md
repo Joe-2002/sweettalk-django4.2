@@ -11,13 +11,22 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 
 ## 项目受众
 
-1.开发人员和程序员：Django 是一个流行的 Web 框架，许多开发人员和程序员选择使用它来快速构建可扩展的 Web 应用程序。无论是有经验的开发人员还是初学者，Django 都提供了一个强大且易于使用的平台来创建功能丰富的网站和应用。
+**开发人员和程序员**
 
-2.学生和教育机构：许多大学、学院和教育机构将 Django 作为教学的一部分，因为它简单易懂，同时又涵盖了 Web 开发的各个方面。学生可以通过学习 Django 来获得实际的编程经验，并将其应用到项目中。
+Django 是一个流行的 Web 框架，许多开发人员和程序员选择使用它来快速构建可扩展的 Web 应用程序。无论是有经验的开发人员还是初学者，Django 都提供了一个强大且易于使用的平台来创建功能丰富的网站和应用。
 
-3.创业者和企业家：对于有创业想法或开设在线业务的人来说，Django 是一个理想的选择。它提供了一个稳定、可靠且高效的开发平台，可以帮助他们快速构建起自己的网站或应用程序，并提供必要的功能和工具来支持业务的发展。
 
-4.Web 设计师和 UI/UX 设计师：尽管 Django 是一个后端框架，但在开发过程中，与前端设计师和 UI/UX 设计师密切合作是非常重要的。Django 提供了与前端技术（如 HTML、CSS 和 JavaScript）的无缝集成，并允许设计师将设计和用户体验融入到 Web 应用中。
+**学生和教育机构**
+
+许多大学、学院和教育机构将 Django 作为教学的一部分，因为它简单易懂，同时又涵盖了 Web 开发的各个方面。学生可以通过学习 Django 来获得实际的编程经验，并将其应用到项目中。
+
+**创业者和企业家**
+
+对于有创业想法或开设在线业务的人来说，Django 是一个理想的选择。它提供了一个稳定、可靠且高效的开发平台，可以帮助他们快速构建起自己的网站或应用程序，并提供必要的功能和工具来支持业务的发展。
+ 
+**Web 设计师和 UI/UX 设计师**
+
+尽管 Django 是一个后端框架，但在开发过程中，与前端设计师和 UI/UX 设计师密切合作是非常重要的。Django 提供了与前端技术（如 HTML、CSS 和 JavaScript）的无缝集成，并允许设计师将设计和用户体验融入到 Web 应用中。
 
 ## 基本信息
 
@@ -25,53 +34,61 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 
 学习形式：理论学习 + 练习
 
-人群定位：可以零基础入门。
+人群定位：可以零基础入门
 
-难度系数：容易
-
-备注：需要 Python 基础
+难度系数：中等
 
 如果觉得本项目中有错误，可以[点击这里](https://github.com/Joe-2002/sweettalk_django4.2/issues)提交你希望补充的内容，我们看到后会尽快进行补充。
 
 ## 项目亮点
 
-1.本项目拥有清晰简洁的教学文档和匹配的课后习题。
+- 本项目拥有清晰简洁的教学文档和匹配的课后习题。
 
-2.项目开发过程中会涉及到设计、开发、调试、部署等多个环节，这将使你熟悉整个 Web 应用的生命周期。
+- 项目开发过程中会涉及到设计、开发、调试、部署等多个环节，这将使你熟悉整个 Web 应用的生命周期。
+
+## 学习人数
+| Datawhale 开源学习 | Django 后端开发入门 |
+| -------------------- | --------------------- |
+| 第 49 期           | 54人                |
+| 第 51 期           | 89人                |
+
+
 
 ## 项目规划
 
-### Day1
-
+### Day1 安装虚拟环境与依赖包
 #### 虚拟环境
 
-1. 在虚拟环境中，安装 debug_toolbar 库
-2. 在虚拟环境中，安装 django_extensions 库
+ 在虚拟环境中安装django依赖包
+
+额外的工具
+1. debug_toolbar 库
+2. django_extensions 库
 
 #### 搭建项目
 
 1. 新建一个名为 erp 的项目
+
 2. 在 apps 中，新建名为 data 的 app
+
 3. 在 apps 中，新建名为 purchase 的 app
 
 #### 运行项目
 
 1. 配置 settings.py 文件
+
 2. 运行项目
 
-### Day2
+### Day2 创建 Django 项目和 APP
 
-#### 构建数据表并合并
 
-1. 创建产品分类和产品两个数据表
-2. 执行生成迁移脚本命令（python manage.py makemigrations）和迁移命令（python manage.py migrate）
-
-#### 据表的常用字段和常用配置
+#### 数据表的常用字段和常用配置
 
 1. 熟悉数据表的常用字段和常用配置
 2. 尝试使用数据表的字段和配置
 
-### Day3
+### Day3 配置 settings.py 和 启动项目
+
 
 #### 引入 admin 后台和管理员
 
@@ -85,55 +102,60 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 2. 撰写根据产品分类筛选产品的 api
 3. 使用 postman 调用 api
 
-### Day4
+### Day4 Django 构建数据表创建与数据迁移
 
-#### QuerySet 和 Instance
+#### 构建数据表并合并
 
-1. 输出相关数据的数据类型，找出 QuerySet 和 Instance
-2. 尝试对数据进行增删查改等操作
+1. 创建产品分类和产品两个数据表
+2. 执行生成迁移脚本命令和迁移命令
 
-### Day5
+
+### Day5 Django-models的常用字段和常用配置
 
 #### APIView
 
 1. 使用 APIView，试比较 APIView 和 as_view 的区别
 2. 使用 APIView 的 as_view 方法
 
-### Day6
+### Day6 Django-admin 引入admin后台和管理员
 
 #### 构建序列化
 
-1. 构建序列化
-2. 序列化单个字段
-3. 序列化多个字段
-4. 序列化所有字段
+- 构建序列化
+- 序列化单个字段
+- 序列化多个字段
+- 序列化所有字段
 
 #### 序列化的高级使用
 
-1. 序列化单个对象
-2. 序列化多个对象
-3. 序列关联对象（有外键）
+- 序列化单个对象
+- 序列化多个对象
+- 序列关联对象（有外键）
 
-### Day7
+### Day7 构建数据表
 
-#### Django-DRF(ModelViewSet)的使用
+- #### Django-DRF的使用
 
-1. Django-DRF（ModelViewSet）简介
-2. 使用 DRF（ModelViewSet）方法
+- #### Django-DRF简介 
 
-### Day8
+### Day8 DRF QuerySet 和 Instance功能概述
+
+#### QuerySet 和 Instance
+
+1. 输出相关数据的数据类型，找出 QuerySet 和 Instance
+2. 尝试对数据进行增删查改等操作
 
 #### DefaultRouter 的使用
 
-1. 导入 DefaultRouter
-2. 使用 DefaultRouter 注册 API
-3. 将 API 导入项目路由配置中
+- 导入 DefaultRouter
+- 使用 DefaultRouter 注册 API
+- 将 API 导入项目路由配置中
 
 #### 自定义函数的使用
 
-1. 引入自定义函数的装饰器
-2. 编写自定义函数
-3. 测试自定义函数
+- 引入自定义函数的装饰器
+- 编写自定义函数
+- 测试自定义函数
 
 ## 贡献者
 
@@ -159,6 +181,11 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
          <a href="https://github.com/Ethan-2004"><img width="70" height="70" src="https://github.com/Ethan-2004.png?s=40" alt="pic"></a><br>
          <a href="https://github.com/Ethan-2004">张海生</a>
          <p>南通师范高等专科学校<br>江苏霖承科技有限公司</p>
+      </td>
+      <td>
+         <a href="https://github.com/user58932"><img width="70" height="70" src="https://github.com/user58932.png?s=40" alt="pic"></a><br>
+         <a href="https://github.com/user58932">蒋忱迅</a>
+         <p>南京航空航天大学<br>江苏霖承科技有限公司</p>
       </td>
     </tr>
   </tbody>
