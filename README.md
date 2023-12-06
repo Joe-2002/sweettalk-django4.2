@@ -34,7 +34,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 学习形式：理论学习 + 练习
 
-人群定位：可以零基础入门。
+人群定位：可以零基础入门
 
 难度系数：中等
 
@@ -139,11 +139,11 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 ### Day7
 
-- #### Django-DRF(ModelViewSet)的使用
+- Django-DRF(ModelViewSet)的使用
 
-- #### Django-DRF（ModelViewSet）简介
+- Django-DRF（ModelViewSet）简介
 
-- #### 使用 DRF（ModelViewSet）方法
+- 使用 DRF（ModelViewSet）方法
 
 ### Day8
 
