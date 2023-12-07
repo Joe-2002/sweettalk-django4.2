@@ -51,6 +51,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 | -------------------- | --------------------- |
 | 第 49 期           | 54人                |
 | 第 51 期           | 89人                |
+| 第 52 期           | 人                |
 
 
 
@@ -161,7 +162,8 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 项目负责人：[李柯辰](https://github.com/Joe-2002)
 
-邮箱：likechen@linchance.com
+邮箱：likechen@linchance.com  [给我发邮件](likechen@linchance.com)
+
 
 <div>
 <table border="0">
@@ -182,19 +184,18 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
          <a href="https://github.com/Ethan-2004">张海生</a>
          <p>南通师范高等专科学校<br>江苏霖承科技有限公司</p>
       </td>
-      <td>
-         <a href="https://github.com/user58932"><img width="70" height="70" src="https://github.com/user58932.png?s=40" alt="pic"></a><br>
-         <a href="https://github.com/user58932">蒋忱迅</a>
-         <p>南京航空航天大学<br>江苏霖承科技有限公司</p>
-      </td>
     </tr>
   </tbody>
 </table>
 </div>
+  
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Joe-2002/sweettalk-django4.2&type=Date)](https://star-history.com/#Joe-2002/sweettalk-django4.2&Date)
 
 ## 致谢
 
-特别感谢 [@Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)对本项目的帮助与支持。
+特别感谢 [Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)、[周理璇](https://www.github.com/Aomferni)  对本项目的帮助与支持。
 
 特别感谢以下为教程做出贡献的同学！
 

@@ -9,5 +9,6 @@
   * [P08 DRF QuerySet和Instance](P08.md)
   * [P09 Django APIView](P09.md)
   * [P10 Django Serialization（序列化的高级使用）](P10.md)
-  * [P11 Django-DRF（ModelViewSet）](P11.md)
-  * [P12 Django-DRF 路由组件与自定义函数）](P12.md)
+  * [P11 Django-DRF（ModelViewSet）、路由组件(DefaultRouter)和自定义函数 ](P11.md)
+  * [P12 Postman 以及国内API调试工具介绍](P12.md) 
+  * [P13 Django 课后练习题](P13.md)
