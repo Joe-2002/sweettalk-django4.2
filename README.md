@@ -1,4 +1,4 @@
-# Sweettalk-Django4.2
+# Sweettalk-Django 4.2
 
 ## 项目介绍
 
@@ -23,14 +23,14 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 **创业者和企业家**
 
 对于有创业想法或开设在线业务的人来说，Django 是一个理想的选择。它提供了一个稳定、可靠且高效的开发平台，可以帮助他们快速构建起自己的网站或应用程序，并提供必要的功能和工具来支持业务的发展。
- 
+
 **Web 设计师和 UI/UX 设计师**
 
 尽管 Django 是一个后端框架，但在开发过程中，与前端设计师和 UI/UX 设计师密切合作是非常重要的。Django 提供了与前端技术（如 HTML、CSS 和 JavaScript）的无缝集成，并允许设计师将设计和用户体验融入到 Web 应用中。
 
 ## 基本信息
 
-学习周期：8 天，每天平均花费时间 1 小时-2 小时不等，根据个人学习接受能力强弱有所浮动。
+学习周期：8 天，每天平均花费时间 1 小时- 2 小时不等，根据个人学习接受能力强弱有所浮动。
 
 学习形式：理论学习 + 练习
 
@@ -38,9 +38,7 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 难度系数：中等
 
-备注：需要 Python 基础
-
-如果觉得本项目中有错误，可以[点击这里](https://github.com/Joe-2002/sweettalk_django4.2/issues)提交你希望补充的内容，我们看到后会尽快进行补充。
+如果觉得本项目中有错误，可以 [点击这里](https://github.com/Joe-2002/sweettalk_django4.2/issues) 提交你希望补充的内容，我们看到后会尽快进行补充。
 
 ## 项目亮点
 
@@ -48,22 +46,28 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 - 项目开发过程中会涉及到设计、开发、调试、部署等多个环节，这将使你熟悉整个 Web 应用的生命周期。
 
-## 学习人数
+## 学习人数  
+
 | Datawhale 开源学习 | Django 后端开发入门 |
-| -------------------- | --------------------- |
+| :--------------------: | :---------------------: |
 | 第 49 期           | 54人                |
 | 第 51 期           | 89人                |
-
+| 第 52 期           | --人                |
 
 ## 项目规划
 
 ### Day1
-#### 虚拟环境
 
- 在虚拟环境中安装django依赖包
+#### 安装虚拟环境与依赖包  
 
-额外的工具
-1. debug_toolbar 库
+1. 安装虚拟环境
+
+2. 在虚拟环境中安装django依赖包
+
+#### 额外的工具  
+
+1. debug_toolbar 库  
+
 2. django_extensions 库
 
 #### 搭建项目
@@ -82,88 +86,117 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
 
 ### Day2
 
-#### 构建数据表并合并
-
-1. 创建产品分类和产品两个数据表
-2. 执行生成迁移脚本命令和迁移命令
-
-
+#### 创建 Django 项目和 APP
 
 #### 数据表的常用字段和常用配置
 
-1. 熟悉数据表的常用字段和常用配置
+1. 熟悉数据表的常用字段和常用配置  
+
 2. 尝试使用数据表的字段和配置
 
-### Day3
+### Day3  
+
+#### 配置 settings.py 和 启动项目
 
 #### 引入 admin 后台和管理员
 
-1. 创建 admin 的超级管理员
+1. 创建 admin 的超级管理员  
+
 2. 在 admin 文件中引入数据表
 3. 注册数据表到 admin
 
 #### 外键的使用
 
-1. 给产品表创建一个外键
+1. 给产品表创建一个外键  
+
 2. 撰写根据产品分类筛选产品的 api
 3. 使用 postman 调用 api
 
-### Day4
+### Day4  
 
-#### QuerySet 和 Instance
+#### Django 构建数据表创建与数据迁移
 
-1. 输出相关数据的数据类型，找出 QuerySet 和 Instance
-2. 尝试对数据进行增删查改等操作
+#### 构建数据表并合并
 
-### Day5
+1. 创建产品分类和产品两个数据表  
+
+2. 执行生成迁移脚本命令和迁移命令
+
+### Day5  
+
+#### Django-models 的常用字段和常用配置
 
 #### APIView
 
-1. 使用 APIView，试比较 APIView 和 as_view 的区别
+1. 使用 APIView，试比较 APIView 和 as_view 的区别  
+
 2. 使用 APIView 的 as_view 方法
 
-### Day6
+### Day6  
+
+#### django-admin 引入admin后台和管理员
 
 #### 构建序列化
 
-- 构建序列化
+- 构建序列化  
+
 - 序列化单个字段
 - 序列化多个字段
 - 序列化所有字段
 
 #### 序列化的高级使用
 
-- 序列化单个对象
+- 序列化单个对象  
+
 - 序列化多个对象
 - 序列关联对象（有外键）
 
+#### 构建数据表
+
 ### Day7
 
-- Django-DRF(ModelViewSet)的使用
+#### DRF 功能概述  
 
-- Django-DRF（ModelViewSet）简介
+- #### Django-DRF 的使用
 
-- 使用 DRF（ModelViewSet）方法
+- #### Django-DRF 简介
 
-### Day8
+#### QuerySet 和 Instance
+
+1. 输出相关数据的数据类型，找出 QuerySet 和 Instance  
+
+2. 尝试对数据进行增删查改等操作
 
 #### DefaultRouter 的使用
 
-- 导入 DefaultRouter
+- 导入 DefaultRouter  
+  
 - 使用 DefaultRouter 注册 API
 - 将 API 导入项目路由配置中
 
 #### 自定义函数的使用
 
-- 引入自定义函数的装饰器
+- 引入自定义函数的装饰器  
+
 - 编写自定义函数
 - 测试自定义函数
+
+## 更新计划  
+
+|   内容  | 详细内容 | 更新时间     |  from  |  审核  |
+|:-------:|:---:|:--------:|:---------:|:-----------:|
+| P11、P12 内容合并   | ***P11 ModelViewSet、P12 DefaultRouter 和自定义函数*** 合并  | 2023/12/07   | 郭丹丹|袁博文|
+| P8 内容扩充    | ***P8 QuerySet 和 Instance*** 补充相关概念与代码示例   | 2023/12/07   |袁博文|张海生|
+| P10 内容补充    | ***P10 Django Serialization 序列化的高级使用*** 补充相关概念与示例  | 2023/12/07     |张海生|刘建建|
+| 增加 P12 新内容  | ***P12 Postman 以及国内API调试工具介绍*** 增加 API 工具介绍  | 2023/12/07     |郭丹丹|李柯辰|
+| 增加 P13 新内容  | ***P13 Django 课后练习题*** 增加 Django 课后习题  | 2023/12/07     |刘建建|张海生|
 
 ## 贡献者
 
 项目负责人：[李柯辰](https://github.com/Joe-2002)
 
-邮箱：likechen@linchance.com
+邮箱： [likechen@linchance.com ](likechen@linchance.com)
+
 
 <div>
 <table border="0">
@@ -188,23 +221,21 @@ Django 是一个流行的 Web 框架，许多开发人员和程序员选择使�
   </tbody>
 </table>
 </div>
-
-## Star History
+  
+## 🌟 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Joe-2002/sweettalk-django4.2&type=Date)](https://star-history.com/#Joe-2002/sweettalk-django4.2&Date)
 
 ## 致谢
 
-特别感谢 [Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)、[周理璇](https://www.github.com/Aomferni)对本项目的帮助与支持。
+特别感谢 [Sm1les](https://github.com/Sm1les)、[胡锐锋](https://github.com/Relph1119)、[周理璇](https://www.github.com/Aomferni) 对本项目的帮助与支持。
 
-特别感谢以下为教程做出贡献的同学！
+ 特别感谢以下为教程做出贡献的同学！
 
 <a href="https://github.com/Joe-2002/sweettalk-django4.2/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Joe-2002/sweettalk-django4.2" />
 </a>
 
+## 🌐 项目地址
 
-
-## 项目地址
-
-[点击这里](https://github.com/Joe-2002/sweettalk_django4.2)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-brightgreen)](https://github.com/Joe-2002/sweettalk_django4.2)
