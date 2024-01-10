@@ -9,8 +9,8 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 
 该项目示例是一个商品入库和查询系统，通过我们构建的数据表，将商品的详细信息入库存储，并且可以按条件过滤查询数据，获取详细商品或者商品品类的信息。
 
-在线阅读地址：https://likechen.gitbook.io/sweettalk-django4.2/
-
+在线阅读地址：[https://likechen.gitbook.io/sweettalk-django4.2/
+](https://joe-2002.github.io/sweettalk-django4.2/#/)
 ## 项目受众
 
 **开发人员和程序员**
