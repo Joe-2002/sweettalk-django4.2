@@ -34,7 +34,7 @@ urlpatterns = [
     path('filtergoodscategory/', FilterGoodsCategory),
     path('insertgoodscategory/', InsertGoodsCategory),
     path('filtergoodscategoryapi/', FilterGoodsCategoryAPI.as_view()),
-    path('getgoods/', GetGoods.as_view()),
+    path('getgoods/', GetGoods.as_view(), name='goods-list'),
 ]
 # 把生成的url 添加到项目的url配置中
 urlpatterns += router.urls
