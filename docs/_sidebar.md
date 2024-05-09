@@ -12,3 +12,4 @@
     * [P11 Django-DRF（ModelViewSet）、路由组件(DefaultRouter)和自定义函数 ](contents/P11.md)
     * [P12 Postman 以及国内API调试工具介绍](contents/P12.md) 
     * [P13 Django 课后练习题](contents/P13.md)
+    * [P14 Django 单元测试](contents/P14.md)
