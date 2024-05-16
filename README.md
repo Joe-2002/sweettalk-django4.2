@@ -43,128 +43,45 @@ Django 是一个使用 Python 编写的开源 Web 应用程序框架，它提供
 
 ### Day1
 
-#### 安装虚拟环境与依赖包  
-
-1. 安装虚拟环境
-
-2. 在虚拟环境中安装 Django 依赖包
-
-#### 额外的工具  
-
-1. debug_toolbar 库  
-
-2. django_extensions 库
-
-#### 搭建项目
-
-1. 新建一个名为 erp 的项目
-
-2. 在 apps 中，新建名为 data 的 app
-
-3. 在 apps 中，新建名为 purchase 的 app
-
-#### 运行项目
-
-1. 配置 settings.py 文件
-
-2. 运行项目
+* 安装虚拟环境与依赖包  
+* 额外的工具  
+* 搭建项目
+* 运行项目
 
 ### Day2
 
-#### 创建 Django 项目和 APP
-
-#### 数据表的常用字段和常用配置
-
-1. 熟悉数据表的常用字段和常用配置  
-
-2. 尝试使用数据表的字段和配置
+* 创建 Django 项目和 APP
+* 数据表的常用字段和常用配置
 
 ### Day3  
 
-#### 配置 settings.py 和 启动项目
-
-#### 引入 admin 后台和管理员
-
-1. 创建 admin 的超级管理员  
-
-2. 在 admin 文件中引入数据表
-3. 注册数据表到 admin
-
-#### 外键的使用
-
-1. 给产品表创建一个外键  
-
-2. 撰写根据产品分类筛选产品的 api
-3. 使用 postman 调用 api
+* 配置 settings.py 和 启动项目
+* 引入 admin 后台和管理员
+* 外键的使用
 
 ### Day4  
 
-#### Django 构建数据表创建与数据迁移
-
-#### 构建数据表并合并
-
-1. 创建产品分类和产品两个数据表  
-
-2. 执行生成迁移脚本命令和迁移命令
+* Django 构建数据表创建与数据迁移
+* 构建数据表并合并
 
 ### Day5  
 
-#### Django-models 的常用字段和常用配置
-
-#### APIView
-
-1. 使用 APIView，试比较 APIView 和 as_view 的区别  
-
-2. 使用 APIView 的 as_view 方法
+* Django-models 的常用字段和常用配置
+* APIView
 
 ### Day6  
 
-#### django-admin 引入admin后台和管理员
-
-#### 构建序列化
-
-- 构建序列化  
-
-- 序列化单个字段
-- 序列化多个字段
-- 序列化所有字段
-
-#### 序列化的高级使用
-
-- 序列化单个对象  
-
-- 序列化多个对象
-- 序列关联对象（有外键）
-
-#### 构建数据表
+* django-admin 引入admin后台和管理员
+* 构建序列化
+* 序列化的高级使用
+* 构建数据表
 
 ### Day7
 
-#### DRF 功能概述  
-
-- #### Django-DRF 的使用
-
-- #### Django-DRF 简介
-
-#### QuerySet 和 Instance
-
-1. 输出相关数据的数据类型，找出 QuerySet 和 Instance  
-
-2. 尝试对数据进行增删查改等操作
-
-#### DefaultRouter 的使用
-
-- 导入 DefaultRouter  
-  
-- 使用 DefaultRouter 注册 API
-- 将 API 导入项目路由配置中
-
-#### 自定义函数的使用
-
-- 引入自定义函数的装饰器  
-
-- 编写自定义函数
-- 测试自定义函数
+* DRF 功能概述  
+* QuerySet 和 Instance
+* DefaultRouter 的使用
+* 自定义函数的使用
 
 ## 更新计划  
 
